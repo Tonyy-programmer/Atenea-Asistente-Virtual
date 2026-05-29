@@ -149,3 +149,22 @@ Si vuelves a pedir algo igual, usa la memoria antes de llamar a la API. Esto
 reduce peticiones, latencia y costo. No se cachean respuestas dinamicas como
 hora o fecha.
 
+## Subir a GitHub
+
+El proyecto puede subirse a GitHub. No subas llaves API ni archivos locales.
+El `.gitignore` excluye:
+
+```text
+.venv/
+__pycache__/
+.assistant_memory/
+.env
+*.log
+```
+
+Las llaves deben configurarse como variables de entorno:
+
+```powershell
+setx OPENAI_API_KEY "tu_api_key"
+setx GEMINI_API_KEY "tu_api_key"
+
