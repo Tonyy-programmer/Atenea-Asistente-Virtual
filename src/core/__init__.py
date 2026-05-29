@@ -1,0 +1,1 @@
+"""Logica central del asistente."""
